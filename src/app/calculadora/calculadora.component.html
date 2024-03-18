@@ -1,0 +1,40 @@
+<body style="background-color:rgb(73, 44, 26);">
+
+
+
+    <div class="calculator">
+        <div class="Style">CALCULADORA</div>
+        <div class="display">
+          <input type="text" [(ngModel)]="currentValue" disabled>
+        </div>
+        <div class="buttons">
+          <button (click)="clear()">C</button>
+          <button (click)="appendValue('/')">÷</button>
+          <button (click)="appendValue('*')">×</button>
+          <button (click)="appendValue('-')">-</button>
+          <button (click)="appendValue('7')">7</button>
+          <button (click)="appendValue('8')">8</button>
+          <button (click)="appendValue('9')">9</button>
+          <button (click)="appendValue('+')">+</button>
+          <button (click)="appendValue('4')">4</button>
+          <button (click)="appendValue('5')">5</button>
+          <button (click)="appendValue('6')">6</button>
+          <button (click)="operacion('pow')">x^y</button>
+          <button (click)="appendValue('1')">1</button>
+          <button (click)="appendValue('2')">2</button>
+          <button (click)="appendValue('3')">3</button>
+          <button (click)="operacion('sqrt')">√</button>
+          <button (click)="appendValue('.')">.</button>
+          <button (click)="appendValue('0')">0</button>
+    
+          <button (click)="operacion('sin')">sin</button>
+          <button (click)="operacion('cos')">cos</button>
+          <button (click)="operacion('tan')">tan</button>
+          <button (click)="operacion('rad')">rad</button>
+          <button (click)="operacion('log')">log</button>
+          <button (click)="calculate()">=</button>
+    
+    
+        </div>
+      </div>
+    </body>
